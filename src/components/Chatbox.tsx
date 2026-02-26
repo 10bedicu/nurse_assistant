@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import { Persona } from "@/components/ai-elements/persona";
-import { NurseAssistantProviderProps } from "@/types/nurseAssistant";
 import { API } from "@/utils/api";
 import { RealtimeAgent, RealtimeSession } from "@openai/agents/realtime";
 import { PaperPlaneIcon } from "@radix-ui/react-icons";
@@ -17,6 +16,7 @@ import {
 } from "lucide-react";
 import { useShowNurseAssistant } from "@/context/showNurseAssistant";
 import { cn } from "@/utils/utils";
+import { NurseAssistantProps } from "@/types/nurseAssistant";
 
 const API_URL = import.meta.env.VITE_NURSE_ASSISTANT_API_URL as string;
 const CONTEXT_LIMIT = Math.floor(32_000 * 0.9); // 90% of 128k
@@ -121,9 +121,7 @@ const formatMedicationRoutes = (dosageInstruction: unknown) => {
     .join(", ");
 };
 
-type ChatboxProps = Omit<NurseAssistantProviderProps, "children">;
-
-export default function NurseAssistant(props: ChatboxProps) {
+export default function NurseAssistant(props: NurseAssistantProps) {
   const { showNurseAssistant: show, setShowNurseAssistant: setShow } =
     useShowNurseAssistant();
 

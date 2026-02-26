@@ -1,5 +1,5 @@
 import { lazy } from "react";
-import { NurseAssistantProviderProps } from "./types/nurseAssistant";
+import { NurseAssistantProps } from "./types/nurseAssistant";
 
 interface NavigationLink {
   url: string;
@@ -12,9 +12,7 @@ interface Manifest {
   routes: Record<string, (...args: any) => React.ReactNode>;
   extends: string[];
   components: {
-    NurseAssistantProvider: React.LazyExoticComponent<
-      React.FC<NurseAssistantProviderProps>
-    >;
+    NurseAssistant: React.LazyExoticComponent<React.FC<NurseAssistantProps>>;
     NurseAssistantToggle: React.LazyExoticComponent<
       React.FC<Record<string, never>>
     >;
@@ -29,7 +27,7 @@ const manifest: Manifest = {
   routes: {},
   extends: [],
   components: {
-    NurseAssistantProvider: lazy(() => import("./providers")),
+    NurseAssistant: lazy(() => import("./providers")),
     NurseAssistantToggle: lazy(() => import("./components/Toggle")),
   },
   userNavItems: [],

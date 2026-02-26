@@ -18,11 +18,10 @@ export interface NurseAssistantPaginatedData<T = Record<string, any>> {
   results: T[];
 }
 
-export interface NurseAssistantProviderProps {
+export interface NurseAssistantProps {
   encounter?: NurseAssistantEncounter;
   patient?: NurseAssistantPatient;
   patientId?: string;
   selectedEncounterId?: string;
   facilityId?: string;
-  children: React.ReactNode;
 }
