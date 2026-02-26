@@ -904,7 +904,7 @@ ${req.note ? `Note: ${req.note}` : ""}
                     className={cn(
                       "max-w-[90%] rounded-lg p-3 backdrop-blur-sm",
                       msg.role === "user"
-                        ? "bg-green-600/80 text-white"
+                        ? "bg-green-700/80 text-white"
                         : "bg-neutral-200/50",
                       isStreaming && "animate-pulse",
                     )}
