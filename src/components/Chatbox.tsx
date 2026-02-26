@@ -904,7 +904,7 @@ ${req.note ? `Note: ${req.note}` : ""}
                     className={cn(
                       "max-w-[90%] rounded-lg p-3 backdrop-blur-sm",
                       msg.role === "user"
-                        ? "bg-primary-600/80 text-white"
+                        ? "bg-green-600/80 text-white"
                         : "bg-neutral-200/50",
                       isStreaming && "animate-pulse",
                     )}
@@ -1097,7 +1097,7 @@ ${req.note ? `Note: ${req.note}` : ""}
                   isProjectLoading ||
                   isDataLoading
                 }
-                className="bg-primary-500 flex aspect-square w-8 items-center justify-center rounded-full text-white disabled:opacity-50"
+                className="flex aspect-square w-8 items-center justify-center rounded-full bg-green-600 text-white disabled:opacity-50"
                 title="Send message"
               >
                 {isLoading && !isConnected ? (

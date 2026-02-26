@@ -1,4 +1,4 @@
-# Care Scribe 🚀
+# Care Nurse Assistant 🚀
 
 Run with
 

@@ -31,17 +31,3 @@
     cursor: pointer;
   }
 }
-
-@theme {
-  --color-primary-50: "#def7ec";
-  --color-primary-100: "#def7ec";
-  --color-primary-200: "#bcf0da";
-  --color-primary-300: "#84e1bc";
-  --color-primary-400: "#31c48d";
-  --color-primary-500: "#0d9f6e";
-  --color-primary-600: "#057a55";
-  --color-primary-700: "#046c4e";
-  --color-primary-800: "#03543F";
-  --color-primary-900: "#014737";
-  --color-primary-950: "#def7ec";
-}
